@@ -1,5 +1,5 @@
 <?php
-   if (isset($_SESSION['user'])) {
+   if ($userSession->existSession('user')) {
       include_once('./views/Home.php');
    } else if (isset($_POST['name']) && isset($_POST['email'])) {
       $name = $_POST['name'];

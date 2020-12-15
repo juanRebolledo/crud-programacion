@@ -1,11 +1,17 @@
 <?php 
   class UserSession {
     public function __construct() {
-      session_start();
+      if(!isset($_SESSION)) {
+        session_start();
+      }
     }
 
     public function setCurrentUser($user) {
       $_SESSION['user'] = $user;
+    }
+
+    public function existSession($name) {
+      return isset($_SESSION["$name"]);
     }
 
     public function getCurrentUser() {

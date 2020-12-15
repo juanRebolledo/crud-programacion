@@ -2,7 +2,6 @@
 <div class="container">
   <div class="level">
     <div class="level-left">
-      <a class="button is-danger" href="./actions/logout.php">Cerrar sesión</a>
     </div>
     <div class="level-right">
       <div class="level-item">

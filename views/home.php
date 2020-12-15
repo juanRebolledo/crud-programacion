@@ -3,10 +3,11 @@
   <?php include("./includes/head.php"); ?>
   <title>Home</title>
 <body>
-  <?php 
-    if (file_exists("./includes/heroPrimary.php"))
+  <?php
+    if (file_exists("./includes/heroPrimary.php")) {
       include("./includes/heroPrimary.php");
-    else header('location: ../index.php') 
+    }
+    else header('location: ../index.php');
     ?>
   <?php
     $data = $database->getAllUsers();
