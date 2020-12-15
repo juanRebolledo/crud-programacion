@@ -12,10 +12,9 @@
 
     if ($database->login($name, $email)) {
        $userSession->setCurrentUser($name);
-       include_once('../views/Home.php');
+       header('location: ../index.php');
     } else {
        header('Location: ../views/UserNotFound.php');
     }
   }
-  header('location: ../views/CreateUser.php');
 ?>
