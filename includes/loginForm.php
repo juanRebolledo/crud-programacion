@@ -2,7 +2,7 @@
   <div class="columns is-centered">
     <div class="column is-three-fifths is-offset-one-fifth">       
       <h1 class="title is-2">Ingresar al sistema</h1>
-      <form name="frmdatos" action="" method="POST">  
+      <form name="frmdatos" action="./actions/login.php" method="POST">  
         <div class="field">
           <label class="label">Nombre</label>
           <div class="control">
@@ -24,7 +24,7 @@
         </div>
 
         <div class="control mt-3">
-          <button id="enviar" name="enviar" class="button is-success">Ingresar</button>
+          <button id="login" name="login" class="button is-success">Ingresar</button>
         </div>
       </form>
     </div>
