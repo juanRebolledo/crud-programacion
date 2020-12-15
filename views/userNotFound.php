@@ -1,3 +1,7 @@
+<?php 
+  include_once('../controller/userSessions.php');
+  $userSession = new UserSession();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include("../includes/head.php"); ?>

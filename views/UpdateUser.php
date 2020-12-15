@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php 
+  include_once('../controller/userSessions.php');
+  $userSession = new UserSession();
+  if(!$userSession->existSession('user')) header('location: ../');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

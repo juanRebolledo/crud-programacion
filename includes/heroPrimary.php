@@ -2,7 +2,6 @@
   $uri = './actions/logout.php';
   if (file_exists("../controller/userSessions.php")) {
     $uri = '../actions/logout.php';
-    include("../controller/userSessions.php");
   }
 ?>
 <section class="hero is-primary">
@@ -12,7 +11,6 @@
       <h2 class="subtitle">Facultad de Telemática</h2>
    	</div>
     <?php 
-      $userSession = new UserSession();
       if ($userSession->existSession('user')) {
         ?>
           <div class="level">
